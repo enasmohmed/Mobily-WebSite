@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load  static %}
+{% load bootstrap4 %}
+{% block content  %}
+    <div class="form text-right">
+        <div class="container">
+            <div class="form-body">
+                <h2>Create New Model</h2>
+                    <form  method="post">
+                        <!--{{ form }}-->
+                         {% csrf_token %}
+                        {% bootstrap_form form %}
+                            {{ form.media  }}
+                        <button type="submit">Save Model</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+
+<!--enctype="multipart/fom-date"-->

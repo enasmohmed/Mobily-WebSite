@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Products
+{% endblock %}
+{% block content %}
+<div class="list">
+    <div class="container">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">List</li>
+          </ol>
+        <div class="row">
+             {% for cat  in categories %}
+                <ul class="list-unstyled">
+                    <li>
+                        {% if category.slug == cat.slug %}
+                        {% endif %}
+                        <div class="card" style="width: 16rem;">
+                             <div class="card-body">
+                                <a href="/sub{{cat.get_absolute_url}}" class="btn">{{cat.name}}</a>
+                            </div>
+                        </div>
+                        <!--<a href="/sub{{cat.get_absolute_url}}">{{cat.name}}</a>-->
+                    </li>
+                </ul>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+

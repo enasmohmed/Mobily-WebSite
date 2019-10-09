@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block content %}
+
+<div class="sub">
+   <div class="container">
+       <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+           <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/3/">List</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sub</li>
+          </ol>
+       <div class="row">
+           {% for sub in subcategories %}
+              <!--<div class="text-right">-->
+                <!--<a href="/photo/{{sub.slug}}">{{sub.name}}</a>-->
+                  <!--{% for photo in product.photos %}-->
+                    <!--<img  src="{{ photo.image.url }}">-->
+                  <!--{% endfor %}-->
+            <!--</div>-->
+           <div class="card text-right" style="width: 15rem; margin-left: 20px; margin-top: 20px;">
+               <div class="card-body">
+                    <a href="/photo/{{sub.slug}}" class="btn">{{sub.name}}</a>
+                    {% for photo in product.photos %}
+                        <img  src="{{ photo.image.url }}">
+                    {% endfor %}
+                </div>
+            </div>
+           {% endfor %}
+
+       </div>
+   </div>
+</div>
+
+{% endblock %}
+

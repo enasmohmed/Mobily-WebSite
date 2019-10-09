@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html dir="rtl">
+{% load  static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+     <title>Mobilya Company</title>
+</head>
+<body>
+
+    <!--================ Start Navbar ================-->
+     <!-- Start Upper Bar -->
+   <div class="upper-bar">
+        <div class="container">
+           <div class="row">
+              <div class="info col-sm text-center text-ms-left">
+                <i class="fa fa-phone"></i> <span>0096898836155  </span> ,
+                <i class="fa fa-envelope-o"></i>   ghmamalduqum700@gmail.com
+              </div>
+              <div class="info col-sm text-center text-sm-right">
+                <span>مرحبا بكم  ....</span>
+                <span class="get-quote"> في عالم الموبليا</span>
+                <a href="https://bit.ly/2m5wSfk"><i class="fa fa-facebook fa-lg"></i></a>
+                <a class="link-header" href="NewProduct/create/"><i class="fa fa-plus fa-lg"></i></a>
+                 {% if user.is_authenticated %}
+                 <a class="header" href="{% url 'accounts:logout' %}">تسجيل الخروج</a>
+                  {% else %}
+                <a class="header" href="{% url 'accounts:login' %}">تسجيل الدخول</a>
+                {% endif %}
+            </div>
+           </div>
+           <div class="clearfix"></div>
+        </div>
+     </div>
+    <!-- End Upper Bar -->
+
+     <!-- start navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light text-right">
+        <div class="container Square">
+          <a class="navbar-brand" href="#">
+            <img src="/media/images/logo.png" alt="logo">
+          </a>
+            <p class="title">شركة غمام الدقم للتجارة ش م م</p>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="{% url 'home' %}">الرئيسية </a>
+              </li>
+                 <li class="nav-item">
+                <a class="nav-link" href="#about">عن الشركة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#models">موديلات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#magazine">المجلة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#new">الحديث</a>
+             </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">اتصل بنا</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+      </div>
+    </nav>
+
+    <!--================ End Navbar ================-->
+
+{% block content  %}
+    <!--================ Start Copyright ================-->
+ {% endblock  %}
+    <div class="copyright">
+        <div class="container">
+            <span class="copyright-do">&copy; 2019 copyright</span>
+            <span class="design">Design By: Enas Mohamed</span>
+        </div>
+    </div>
+
+
+    <!--================ En Copyright ================-->
+    <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

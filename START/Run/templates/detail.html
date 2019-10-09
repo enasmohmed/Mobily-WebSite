@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+  <div class="card-details">
+        <div class="container">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/3/">List</a></li>
+            <li class="breadcrumb-item"><a href="">Sub</a></li>
+            <li class="breadcrumb-item"><a href="">Photo</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail</li>
+          </ol>
+           <div class="row">
+                <div class="col-md-2"></div>
+                <div class="card text-center col-md-8">
+                    <div class="card-header">
+                    <h2>{{ product.name }}</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="{{ product.Image.url }}" class="card-img">
+                        <p>{{ product.description}}</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                    <p>Code : {{ product.model_number}}</p>
+                    </div>
+                  </div>
+                    <div class="col-md-2">
+                    </div>
+              <div class="clearfix"></div>
+           </div>
+        </div>
+    </div>
+{% endblock content %}
+
+
+    <!--<div class="product-detail text-center">-->
+        <!--&lt;!&ndash;<h1>{{ product.category }}</h1><br>&ndash;&gt;-->
+        <!--<h2>{{ product.name }}</h2>-->
+        <!--<img src="{{ product.Image.url }}">-->
+        <!--<p>{{ product.description}}</p>-->
+        <!--<p>{{ product.model_number}}</p>-->
+    <!--</div>-->
+
+

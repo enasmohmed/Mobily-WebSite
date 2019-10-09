@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Gallery
+{% endblock title%}
+{% block content %}
+<div class="gallrey">
+   <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/3/">List</a></li>
+            <li class="breadcrumb-item"><a href="{{sub.slug}}">Sub</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Photo</li>
+          </ol>
+        <div class="row">
+            {% for product in products %}
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{{ product.Image.url }}" alt="Card image cap">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <a href="/detail/{{product.slug}}" class="btn btn-danger">اضغط للتفاصيل</a>
+                  </div>
+                </div>
+            {% endfor %}
+
+        </div>
+   </div>
+</div>
+{% endblock content %}
+
+
+
+
