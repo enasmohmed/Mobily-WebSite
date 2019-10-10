@@ -28,12 +28,12 @@
                 <span>مرحبا بكم  ....</span>
                 <span class="get-quote"> في عالم الموبليا</span>
                 <a href="https://bit.ly/2m5wSfk"><i class="fa fa-facebook fa-lg"></i></a>
-                <a class="link-header" href="NewProduct/create/"><i class="fa fa-plus fa-lg"></i></a>
-                 {% if user.is_authenticated %}
-                 <a class="header" href="{% url 'accounts:logout' %}">تسجيل الخروج</a>
-                  {% else %}
-                <a class="header" href="{% url 'accounts:login' %}">تسجيل الدخول</a>
-                {% endif %}
+                <!--<a class="link-header" href="NewProduct/create/"><i class="fa fa-plus fa-lg"></i></a>-->
+                 <!--{% if user.is_authenticated %}-->
+                 <!--<a class="header" href="{% url 'accounts:logout' %}">تسجيل الخروج</a>-->
+                  <!--{% else %}-->
+                <!--<a class="header" href="{% url 'accounts:login' %}">تسجيل الدخول</a>-->
+                <!--{% endif %}-->
             </div>
            </div>
            <div class="clearfix"></div>
@@ -51,7 +51,6 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item ">
@@ -72,7 +71,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'contact' %}">اتصل بنا</a>
               </li>
-
             </ul>
           </div>
           <div class="clearfix"></div>

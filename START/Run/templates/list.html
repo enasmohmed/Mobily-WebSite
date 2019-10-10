@@ -6,10 +6,6 @@
 {% block content %}
 <div class="list">
     <div class="container">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">List</li>
-          </ol>
         <div class="row">
              {% for cat  in categories %}
                 <ul class="list-unstyled">

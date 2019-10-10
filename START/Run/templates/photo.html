@@ -6,12 +6,6 @@
 {% block content %}
 <div class="gallrey">
    <div class="container">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-            <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/3/">List</a></li>
-            <li class="breadcrumb-item"><a href="{{sub.slug}}">Sub</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Photo</li>
-          </ol>
         <div class="row">
             {% for product in products %}
                 <div class="card" style="width: 18rem;">
