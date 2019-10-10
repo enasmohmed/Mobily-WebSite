@@ -383,18 +383,10 @@ body{
     padding: 30px ;
 }
 
-.cards .navbar {
-    border-radius: 10px;
+ .cards .navbar {
     margin-top: 20px;
-    margin-bottom: 20px;
-    /* z-index: 1000; */
+    border-radius: 20px;
 }
-
-/* @media (max-width: 991px) {
-    .cards .navbar .navbar-nav  {
-        z-index: 1000;
-    }
-} */
 
 .cards .bg-light {
     background-color: #a93f62 !important
@@ -410,14 +402,14 @@ body{
   padding: 0;
   display: flex;
   background-color: #a93f62;
-  height: 60px;
   border-radius: 10px;
   width: 100%;
 }
 
 .cards .navbar .navbar-nav .nav-item {
-   text-align: center;
-   margin-left: -7px;
+    text-align: center;
+    margin-right: 4px;
+    margin-top: -10px;
 }
 
 .cards .navbar .navbar-nav .nav-item .nav-link-two{
@@ -447,7 +439,7 @@ body{
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-}
+} 
 
 @media (max-width: 991px) {
     .cards {
