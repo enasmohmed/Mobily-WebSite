@@ -100,7 +100,8 @@ body{
 
 @media (max-width: 991px) {
     .navbar {
-       margin-bottom: 7px;
+       margin-bottom: 5px;
+       text-align: center;
     }
 }
 
@@ -175,6 +176,11 @@ body{
     margin-top: -13px;
 }
 
+@media (max-width: 991px) {
+    .slider .carousel-inner{
+       margin-top: -20px;
+    }
+}
 .slider .carousel-item{
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -257,7 +263,7 @@ body{
 
 @media (max-width: 991px) {
     .about{
-        margin-bottom: -90px;
+        margin-bottom: -70px;
     }
 }
 .about .info {
@@ -383,11 +389,16 @@ body{
     padding: 30px ;
 }
 
- .cards .navbar {
+.cards .navbar {
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
+@media (max-width: 991px) {
+    .cards .navbar  {
+       margin-bottom: 30px;
+    }
+}
 .cards .bg-light {
     background-color: #a93f62 !important
 }
@@ -448,14 +459,14 @@ body{
 }
 
 .cards .card{
-    margin-top: 28px;
+    margin-top: 30px;
     margin-bottom: 10px;
     border-radius: 12px;
 }
 
 @media (max-width: 991px) {
     .cards .card {
-       margin: 20px auto 10px;
+        margin: auto auto 30px;
     }
 }
 .cards .card  .card-img-top {
@@ -808,8 +819,8 @@ body{
 
 @media (max-width: 991px) {
     .card-details .card {
-     margin: 20px auto 10px;
-     width: 100%;
+        margin: 20px auto 10px;
+        width: 100%;
     }
 }
 
@@ -940,7 +951,7 @@ body{
     margin-top: 50px;
 }
 .list ul{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .list a {
@@ -959,16 +970,15 @@ body{
     border-radius: 13px;
     font-size: 22px
 }
-/* .list ul li .card .card-body{
+.list ul li .card {
+}
 
-} */
 
-/* .list .card{
-
-} */
 @media (max-width: 991px) {
     .list ul  li .card{
         margin-right: 70px;
+        /* text-align: center !important; */
+        margin-bottom: -20px;
     }
 }
 
@@ -1008,7 +1018,8 @@ body{
 
 @media (max-width: 991px) {
     .sub .card{
-        margin-right: 120px;
+        /* text-align: center; */
+        margin-right: 130px;
     }
 }
 .card .card-body {
@@ -1036,7 +1047,9 @@ body{
 
 @media (max-width: 991px) {
     .gallrey .card{
-        margin-right: 90px;
+        /* text-align: center; */
+        /* margin-right: 70px; */
+        margin: 20px auto 10px;
     }
 }
 /****** End Gallrey *********/
