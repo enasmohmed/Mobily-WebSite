@@ -6,10 +6,13 @@
         <div id="main-slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item carousel-one active">
+                    <img class="d-block w-100" src="/media/images/Different-12.jpg">
                 </div>
                 <div class="carousel-item carousel-two">
+                    <img class="d-block w-100" src="/media/images/slider-1.jpg">
                 </div>
                 <div class="carousel-item carousel-three">
+                    <img class="d-block w-100" src="/media/images/new-model-1.jpg">
                 </div>
             </div>
             <ol class="carousel-indicators">
@@ -89,75 +92,75 @@
     <!--================ Start card ================-->
 
     <div class="cards" id="models">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">الاقسام :</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        {% for cat in categories %}
-                        <li class="nav-item">
-                          <a class="nav-link-two" href="{{ cat.get_absolute_url }}">{{ cat.name}}</a>
-                        </li>
-                        {% endfor %}
-                      </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">الاقسام :</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                {% for cat in categories %}
+                <li class="nav-item">
+                    <a class="nav-link-two" href="{{ cat.get_absolute_url }}">{{ cat.name}}</a>
+                </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/media/images/New folder/89.jpg" class="card-img-top">
+                        <div class="overlay">
+                            
+                        </div>
                     </div>
-            </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/media/images/New folder/89.jpg" class="card-img-top">
-                    <div class="overlay">
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/media/images/New folder/160.jpg" class="card-img-top">
+                        <div class="overlay">
                         
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/media/images/New folder/160.jpg" class="card-img-top">
-                    <div class="overlay">
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/media/images/148.jpg" class="card-img-top">
-                    <div class="overlay">
-                      
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/media/images/122.jpg" class="card-img-top">
-                    <div class="overlay">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/media/images/148.jpg" class="card-img-top">
+                        <div class="overlay">
                         
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/media/images/122.jpg" class="card-img-top">
+                        <div class="overlay">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/media/images/239.jpg" class="card-img-top">
+                        <div class="overlay">
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/media/images/card-3.jpg" class="card-img-top">
+                        <div class="overlay">
+                        
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/media/images/239.jpg" class="card-img-top">
-                    <div class="overlay">
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/media/images/card-3.jpg" class="card-img-top">
-                    <div class="overlay">
-                       
-                    </div>
-                </div>
-            </div>
+            <div class="clearfix"></div>
+            </div> 
         </div>
-        <div class="clearfix"></div>
-        </div> 
-    </div>
      <!--================ End card ================-->
 
      <!--================ Start New Model ==============-->

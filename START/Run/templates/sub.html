@@ -6,22 +6,14 @@
    <div class="container">
        <div class="row">
            {% for sub in subcategories %}
-              <!--<div class="text-right">-->
-                <!--<a href="/photo/{{sub.slug}}">{{sub.name}}</a>-->
-                  <!--{% for photo in product.photos %}-->
-                    <!--<img  src="{{ photo.image.url }}">-->
-                  <!--{% endfor %}-->
-            <!--</div>-->
-           <div class="card text-right" style="width: 15rem; margin-left: 20px; margin-top: 20px;">
-               <div class="card-body">
-                    <a href="/photo/{{sub.slug}}" class="btn">{{sub.name}}</a>
-                    {% for photo in product.photos %}
-                        <img  src="{{ photo.image.url }}">
-                    {% endfor %}
+           <div class="col-md-4">
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body text-center">
+                        <a href="/photo/{{sub.slug}}" class="btn">{{sub.name}}</a>
+                    </div>
                 </div>
-            </div>
+           </div>
            {% endfor %}
-
        </div>
    </div>
 </div>

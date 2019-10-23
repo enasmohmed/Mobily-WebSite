@@ -8,15 +8,16 @@
    <div class="container">
         <div class="row">
             {% for product in products %}
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="{{ product.Image.url }}" alt="Card image cap">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">{{product.name}}</h5>
-                    <a href="/detail/{{product.slug}}" class="btn btn-danger">اضغط للتفاصيل</a>
-                  </div>
-                </div>
+                <!-- <div class="col-md-4"> -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="{{ product.Image.url }}" alt="Card image cap">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">{{product.name}}</h5>
+                          <a href="/detail/{{product.slug}}" class="btn btn-danger">اضغط للتفاصيل</a>
+                        </div>
+                    </div>
+                <!-- </div> -->
             {% endfor %}
-
         </div>
    </div>
 </div>

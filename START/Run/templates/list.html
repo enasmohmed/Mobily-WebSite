@@ -1,29 +1,26 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}
-    Products
-{% endblock %}
 {% block content %}
-<div class="list">
+<div class="page-one">
     <div class="container">
         <div class="row">
              {% for cat  in categories %}
-                <ul class="list-unstyled">
-                    <li>
+                <!-- <ul class="list-unstyled">
+                    <li> -->
                         {% if category.slug == cat.slug %}
                         {% endif %}
-                        <div class="card" style="width: 16rem;">
-                             <div class="card-body">
-                                <a href="/sub{{cat.get_absolute_url}}" class="btn">{{cat.name}}</a>
+                       <div class="col-md-4">
+                            <div class="card" style="width: 16rem;">
+                                <div class="card-body">
+                                    <a href="/sub{{cat.get_absolute_url}}" class="btn">{{cat.name}}</a>
+                                </div>
                             </div>
-                        </div>
-                        <!--<a href="/sub{{cat.get_absolute_url}}">{{cat.name}}</a>-->
-                    </li>
-                </ul>
+                       </div>
+                    <!-- </li>
+                </ul> -->
             {% endfor %}
         </div>
     </div>
 </div>
 {% endblock content %}
-
 
